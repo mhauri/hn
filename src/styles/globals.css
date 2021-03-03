@@ -1,0 +1,10 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body, html, #__next {
+    min-height: 100vh;
+}
+pre {
+    white-space: pre-wrap;
+}
