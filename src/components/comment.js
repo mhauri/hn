@@ -23,7 +23,7 @@ export default function Comment({ data }) {
   return (
     <div className="group">
       <div
-        className="relative hover:bg-yellow-100 dark:hover:bg-gray-700 hover:bg-opacity-80 px-5 pl-3 -ml-3 -mr-3 py-2 -my-2"
+        className="relative hover:bg-yellow-100 dark:hover:bg-gray-700 hover:bg-opacity-80 px-5 pl-3 -ml-3 -mr-3 py-2 -my-2 overflow-ellipsis"
         onClick={onToggleCollasped}>
         {isCollapsed &&
         <div className="absolute right-0 mr-3 sm:mt-1 px-1 text-xs font-me text-black bg-yellow-500 rounded-sm cursor-default">
@@ -38,7 +38,7 @@ export default function Comment({ data }) {
             })}
           </span>
         </div>
-        <div className="prose dark:text-gray-300 " dangerouslySetInnerHTML={content} />
+        <div className="prose dark:text-gray-300 overflow-ellipsis		" dangerouslySetInnerHTML={content} />
       </div>
       <div className={`my-4 border-l-2 ${indentStyle}`} hidden={isCollapsed}>
         <div className="ml-3 sm:ml-5 dark:text-gray-300">
