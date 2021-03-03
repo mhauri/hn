@@ -5,7 +5,7 @@ export default function PostCard({data}) {
   if (!data) return <></>;
 
   return (
-    <div className="my-3">
+    <div className="mb-6">
       <a
         href={data.url}
         target="_blank"

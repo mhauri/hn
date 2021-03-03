@@ -5,7 +5,7 @@ import Footer from "../src/components/footer"
 
 export default function Home({data}) {
   return (
-    <div className="min-h-screen py-5 bg-gray-50 dark:bg-black px-5">
+    <div className="min-h-screen py-10 bg-gray-50 dark:bg-black px-5">
       <SEO title={"Hacker News"} description="My personal Hacker News reader"/>
       <Posts data={data}/>
       <Footer/>
