@@ -2,9 +2,9 @@ import "unfetch";
 
 const COMMENTS_LIMIT = 5;
 
-const POSTS_URL = "https://api.hauri.dev/v1/hn/topstories";
+const POSTS_URL = "https://api.hauri.dev/hn/v1/topstories";
 
-const ITEM_URL = "https://api.hauri.dev/v1/hn/item";
+const ITEM_URL = "https://api.hauri.dev/hn/v1/item";
 
 export async function getPostIds() {
   const ids = await fetch(`${POSTS_URL}?api_key=${process.env.APIKEY}`).then((res) =>
