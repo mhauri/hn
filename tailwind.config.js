@@ -8,20 +8,9 @@ module.exports = {
       fontFamily: {
         sans: [...defaultTheme.fontFamily.sans],
       },
-      typography: (theme) => ({
-        DEFAULT: {
-          css: {
-            color: theme('colors.white'),
-            a: {
-              color: theme('colors.blue.500'),
-              textDecoration: 'none',
-              '&:hover': {
-                textDecoration: 'underline',
-              },
-            },
-          },
-        },
-      }),
+      colors: {
+        accent: '#db2777'
+      }
     },
   },
   variants: {

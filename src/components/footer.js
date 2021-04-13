@@ -7,7 +7,7 @@ export const Footer = () => {
           href="https://hauri.dev"
           target="_blank"
           rel="noopener noreferrer"
-          className="hover:text-black dark:hover:text-white border-b border-dashed border-gray-400"
+          className="text-accent hover:text-black dark:hover:text-gray-50 border-b border-dashed border-gray-400"
         >
           Marcel Hauri
           </a>
@@ -17,7 +17,7 @@ export const Footer = () => {
           href="https://github.com/mhauri/hn"
           target="_blank"
           rel="noopener noreferrer"
-          className="hover:text-black dark:hover:text-white border-b border-dashed border-gray-400"
+          className="text-accent hover:text-black dark:hover:text-gray-50 border-b border-dashed border-gray-400"
         >
         Source
       </a>

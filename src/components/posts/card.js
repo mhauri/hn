@@ -10,7 +10,7 @@ export default function PostCard({data}) {
         href={data.url}
         target="_blank"
         rel="noopener noreferrer"
-        className="text-black dark:text-gray-300 text-xl font-semibold leading-3 hover:text-red-500 focus:text-red-500"
+        className="text-accent underline text-xl font-semibold leading-3 hover:text-black dark:hover:text-gray-50"
       >
         {data.title}
       </a>
@@ -18,7 +18,7 @@ export default function PostCard({data}) {
         <span>{data.meta.description}</span>
       }
 
-      <div className="text-sm font-normal text-gray-400 py-1">
+      <div className="text-sm font-normal text-gray-600 dark:text-gray-400 py-1">
         <span>{data.points} points</span>
         <span className="text-gray-700"> • </span>
         <span>

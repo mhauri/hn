@@ -10,7 +10,7 @@ export default function Item({data}) {
   const content = {__html: data ? data.content : ""};
 
   if (isFallback) {
-    return <div className="min-h-screen py-5 bg-gray-50 dark:bg-black px-5">
+    return <div className="min-h-screen py-5 dark:bg-gray-900 px-5">
       <SEO title={"Hacker News"} description="My personal Hacker News reader"/>
       <div className="min-h-screen flex items-center bg-gray-50 dark:bg-black">
         <svg className="w-6 h-6 m-auto animate-spin" xmlns="http://www.w3.org/2000/svg" stroke="currentColor"
@@ -23,12 +23,12 @@ export default function Item({data}) {
   }
 
   return (
-    <div className="min-h-screen py-5 bg-gray-50 dark:bg-black px-5">
+    <div className="min-h-screen py-5 dark:bg-gray-900 px-5">
       <SEO title={data.title} description={data.content ? data.content : data.title}/>
       <div className="min-h-screen flex flex-col mx-auto max-w-3xl px-4 md:px-0 overflow-x-hidden overflow-ellipsis	">
         <header className="pt-10 text-center">
           <Link href="/">
-            <a className="inline-flex items-center dark:text-gray-300 hover:text-red-500 rounded-sm py-1 pr-2 text-xs sm:text-sm">
+            <a className="inline-flex items-center text-accent hover:text-black dark:hover:text-gray-50 rounded-sm py-1 pr-2 text-xs sm:text-sm">
               <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"
                    xmlns="http://www.w3.org/2000/svg">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M15 19l-7-7 7-7"></path>
