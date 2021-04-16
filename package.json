@@ -9,6 +9,7 @@
     "export": "next export"
   },
   "dependencies": {
+    "@socialgouv/matomo-next": "^1.2.1",
     "autoprefixer": "^10.2.4",
     "date-fns": "^2.17.0",
     "next": "10.0.7",
