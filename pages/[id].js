@@ -55,7 +55,7 @@ export default function Item({data}) {
             </span>
             <span className="text-gray-700"> • </span>
             <span>
-              {formatDistanceToNowStrict(fromUnixTime(data.time), {
+              {formatDistanceToNowStrict(fromUnixTime(data.time ?? null), {
                 addSuffix: true,
               })}
             </span>
