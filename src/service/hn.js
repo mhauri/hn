@@ -2,12 +2,12 @@ import "unfetch";
 
 const COMMENTS_LIMIT = 5;
 
-const POSTS_URL = "https://api.hauri.dev/hn/v1/topstories";
+const POSTS_URL = "https://api.hauri.dev/hn/v1/items?show=top";
 
-const ITEM_URL = "https://api.hauri.dev/hn/v1/item";
+const ITEM_URL = "https://api.hauri.dev/hn/v1/items";
 
 export async function getPostIds() {
-  const ids = await fetch(`${POSTS_URL}?api_key=${process.env.APIKEY}`).then((res) =>
+  const ids = await fetch(`${POSTS_URL}`).then((res) =>
     res.json()
   );
   return ids.map(function (item) {
@@ -16,7 +16,7 @@ export async function getPostIds() {
 }
 
 export async function getPosts() {
-  const data = await fetch(`${POSTS_URL}?api_key=${process.env.APIKEY}`)
+  const data = await fetch(`${POSTS_URL}`)
     .then((res) => res.json())
     .catch(e => {
       console.error(e);
@@ -28,7 +28,7 @@ export async function getPosts() {
 }
 
 export async function getPostWithComments(id) {
-  const data = await fetch(`${ITEM_URL}/${id}?api_key=${process.env.APIKEY}`)
+  const data = await fetch(`${ITEM_URL}/${id}`)
     .then((res) => res.json())
     .catch(e => {
       console.error(e);
