@@ -1,6 +1,5 @@
 # Hacker News reader using Next.js
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](https://opensource.org/licenses/MIT)
-![Twitter Follow](https://img.shields.io/twitter/follow/mhauri?style=social)
 
 **Inspired by Jeff Jadulco's work.** Check it out [here](https://github.com/jeffjadulco/hn)!
 

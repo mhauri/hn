@@ -26,15 +26,13 @@ export default function Item({data}) {
     <div className="min-h-screen py-5 dark:bg-gray-900 px-5">
       <SEO title={data.title} description={data.content ? data.content : data.title}/>
       <div className="min-h-screen flex flex-col mx-auto max-w-3xl px-4 md:px-0 overflow-x-hidden overflow-ellipsis	">
-        <header className="pt-10 text-center">
-          <Link href="/">
-            <a className="inline-flex items-center text-accent hover:text-black dark:hover:text-gray-50 rounded-sm py-1 pr-2 text-xs sm:text-sm">
-              <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+        <header className="pt-10 mt-10 text-center">
+          <Link href="/" className="flex flex-row items-center text-accent hover:text-black dark:hover:text-gray-50 rounded-sm py-1 pr-2 text-xs sm:text-sm">
+              <svg className="w-6 h-6"  width={'12px'} fill="none" stroke="currentColor" viewBox="0 0 24 24"
                    xmlns="http://www.w3.org/2000/svg">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M15 19l-7-7 7-7"></path>
               </svg>
               Back
-            </a>
           </Link>
           <h1
             className="mt-4 pb-4 font-semibold text-2xl sm:text-4xl text-center sm:text-left text-transparent text-black dark:text-gray-300">
@@ -51,10 +49,8 @@ export default function Item({data}) {
             <span>{data.points} points</span>
             <span className="text-gray-700"> • </span>
             <span>
-              <Link href={`/${data.id}`}>
-                <a className="border-b border-dashed border-gray-400 hover:text-black dark:hover:text-white focus:text-black dark:focus:text-white">
-                  {data.comments_count} comment{data.comments_count != 1 && "s"}
-                </a>
+              <Link href={`/${data.id}`} className="border-b border-dashed border-gray-400 hover:text-black dark:hover:text-white focus:text-black dark:focus:text-white">
+                  {data.comments_count} comment{data.comments_count !== 1 && "s"}
               </Link>
             </span>
             <span className="text-gray-700"> • </span>

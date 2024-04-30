@@ -4,7 +4,7 @@
 
 body, html, #__next {
     min-height: 100vh;
-    @apply text-black dark:text-gray-50;
+    @apply text-black dark:text-gray-50 bg-gray-50 dark:bg-gray-900;
 }
 pre {
     white-space: pre-wrap;

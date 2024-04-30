@@ -22,10 +22,8 @@ export default function PostCard({data}) {
         <span>{data.points} points</span>
         <span className="text-gray-700"> • </span>
         <span>
-          <Link href={`/${data.id}`}>
-            <a className="border-b border-dashed border-gray-400 hover:text-black dark:hover:text-white focus:text-black dark:focus:text-white">
+          <Link href={`/${data.id}`} className="border-b border-dashed border-gray-400 hover:text-black dark:hover:text-white focus:text-black dark:focus:text-white">
               {data.comments_count} comment{data.comments_count != 1 && "s"}
-            </a>
           </Link>
         </span>
         <span className="text-gray-700"> • </span>
